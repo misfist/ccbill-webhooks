@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{$isoTimestamp}}",
 							"type": "text"
 						},
 						{
@@ -95,12 +95,12 @@
 						},
 						{
 							"key": "renewalDate",
-							"value": "2024-05-19",
+							"value": "2024-07-14",
 							"type": "text"
 						},
 						{
 							"key": "nextRenewalDate",
-							"value": "2024-06-29",
+							"value": "2024-08-14",
 							"type": "text"
 						},
 						{
@@ -1117,7 +1117,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9693daef-8398-49b6-9367-4acb784ae8b9",
+				"id": "7ea9788b-b4bb-4279-bbd7-a4477c605c84",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -1128,7 +1128,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2978d52b-2ff9-40bb-a964-26b6f55e30c4",
+				"id": "9bb0a79e-d0e1-4861-89c7-8b7f876d69f3",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
