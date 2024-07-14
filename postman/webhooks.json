@@ -251,17 +251,17 @@
 					"urlencoded": [
 						{
 							"key": "subscriptionId",
-							"value": "224108301000365800",
+							"value": "0224108301000365798",
 							"type": "text"
 						},
 						{
 							"key": "transactionId",
-							"value": "124138501000194830",
+							"value": "{{$guid}}",
 							"type": "text"
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{$isoTimestamp}}",
 							"type": "text"
 						},
 						{
@@ -1117,7 +1117,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7ea9788b-b4bb-4279-bbd7-a4477c605c84",
+				"id": "ebb63111-3f71-418c-bd00-c213d1af7e82",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -1128,7 +1128,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9bb0a79e-d0e1-4861-89c7-8b7f876d69f3",
+				"id": "aefaecf2-9b9a-4ba1-84bf-ea52d1e0f699",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
