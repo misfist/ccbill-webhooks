@@ -20,12 +20,12 @@
 					"urlencoded": [
 						{
 							"key": "subscriptionId",
-							"value": "0224108301000365711",
+							"value": "0224108301000365797",
 							"type": "text"
 						},
 						{
 							"key": "transactionId",
-							"value": "124138501000194830",
+							"value": "{{$guid}}",
 							"type": "text"
 						},
 						{
@@ -111,37 +111,11 @@
 					]
 				},
 				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}",
-					"protocol": "https",
+					"raw": "{{webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}",
 					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
+						"{{webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}"
 					],
 					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "RenewalSuccess"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
 						{
 							"key": "validate",
 							"value": "{{validate}}",
