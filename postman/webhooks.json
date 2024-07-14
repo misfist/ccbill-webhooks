@@ -191,48 +191,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=RenewalFailure&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "RenewalFailure"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}webhook&eventType=RenewalFailure&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -286,48 +245,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=Cancellation&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "Cancellation"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}&eventType=Cancellation&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -431,48 +349,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=Void&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "Void"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}&eventType=Void&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -576,48 +453,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=Refund&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "Refund"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}&eventType=Refund&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -726,48 +562,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=UpgradeSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "UpgradeSuccess"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}&eventType=UpgradeSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -1066,48 +861,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook&eventType=NewSaleSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
-					"protocol": "https",
-					"host": [
-						"redkeyclub",
-						"test"
-					],
-					"path": [
-						"wp-admin",
-						"admin-ajax.php"
-					],
-					"query": [
-						{
-							"key": "action",
-							"value": "ccbill-webhook"
-						},
-						{
-							"key": "eventType",
-							"value": "NewSaleSuccess"
-						},
-						{
-							"key": "clientAccnum",
-							"value": "{{clientAccnum}}"
-						},
-						{
-							"key": "clientSubacc",
-							"value": "{{clientSubacc}}"
-						},
-						{
-							"key": "eventGroup",
-							"value": "{{eventGroup}}"
-						},
-						{
-							"key": "validate",
-							"value": "{{validate}}"
-						},
-						{
-							"key": "creationDate",
-							"value": "{{creationDate}}"
-						}
-					]
-				},
+				"url": "{{webhook_url}}&eventType=NewSaleSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
