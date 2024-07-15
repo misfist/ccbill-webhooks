@@ -252,7 +252,7 @@
 		},
 		{
 			"name": "Expiration",
-			"id": "a02d18d8-be58-432c-8081-2f573da00fcc",
+			"id": "bd51aecd-1d60-441c-86b4-31413750665f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -268,11 +268,6 @@
 							"type": "text"
 						},
 						{
-							"key": "transactionId",
-							"value": "{{$guid}}",
-							"type": "text"
-						},
-						{
 							"key": "timestamp",
 							"value": "{{$isoTimestamp}}",
 							"type": "text"
@@ -285,16 +280,6 @@
 						{
 							"key": "clientSubacc",
 							"value": "{{clientSubacc}}",
-							"type": "text"
-						},
-						{
-							"key": "reason",
-							"value": "Invalid Input.",
-							"type": "text"
-						},
-						{
-							"key": "source",
-							"value": "FORM",
 							"type": "text"
 						}
 					]
