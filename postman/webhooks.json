@@ -251,6 +251,60 @@
 			"response": []
 		},
 		{
+			"name": "Expiration",
+			"id": "a02d18d8-be58-432c-8081-2f573da00fcc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subscriptionId",
+							"value": "0224108301000365798",
+							"type": "text"
+						},
+						{
+							"key": "transactionId",
+							"value": "{{$guid}}",
+							"type": "text"
+						},
+						{
+							"key": "timestamp",
+							"value": "{{$isoTimestamp}}",
+							"type": "text"
+						},
+						{
+							"key": "clientAccnum",
+							"value": "{{clientAccnum}}",
+							"type": "text"
+						},
+						{
+							"key": "clientSubacc",
+							"value": "{{clientSubacc}}",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "Invalid Input.",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "FORM",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{webhook_url}}&eventType=Expiration&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
+				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
+			},
+			"response": []
+		},
+		{
 			"name": "Void",
 			"id": "e91f762b-be05-4293-8a54-d59b728cf6d5",
 			"protocolProfileBehavior": {
