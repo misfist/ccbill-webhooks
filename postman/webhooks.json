@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{currentDate}}",
+							"value": "",
 							"type": "text"
 						},
 						{
@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e9e822e7-3bbb-47b7-8cbd-4737d7c87ad5",
+				"id": "71e212ec-0973-48bb-b984-7dfa00324019",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -926,6 +926,12 @@
 					"pm.collectionVariables.set(",
 					"    \"nextRenewalDate\", ",
 					"    nextMonth.toISOString().split('T')[0]",
+					");",
+					"",
+					"const timestamp = new Date();",
+					"pm.collectionVariables.set(",
+					"    \"currentDate\", ",
+					"    timestamp.toISOString().split('.')[0]",
 					");"
 				]
 			}
@@ -933,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e330be7f-afe0-4b83-a4d4-1b92487074cf",
+				"id": "54a80106-50fa-49b5-a4f0-4b750792b570",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -970,17 +976,12 @@
 		},
 		{
 			"key": "creationDate",
-			"value": "20240529201114",
+			"value": "",
 			"type": "string"
 		},
 		{
 			"key": "eventType",
 			"value": "eventType"
-		},
-		{
-			"value": "",
-			"type": "string",
-			"disabled": true
 		},
 		{
 			"key": "currentDate",
