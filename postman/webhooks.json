@@ -675,7 +675,7 @@
 						},
 						{
 							"key": "postalCode",
-							"value": "{{$randomCity}}",
+							"value": "11220",
 							"type": "text"
 						},
 						{
