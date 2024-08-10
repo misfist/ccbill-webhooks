@@ -895,7 +895,7 @@
 						},
 						{
 							"key": "renewalDate",
-							"value": "{{currentDate}}",
+							"value": "{{nextRenewalDate}}",
 							"type": "text"
 						}
 					]
