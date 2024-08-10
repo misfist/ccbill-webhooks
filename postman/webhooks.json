@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{$isoTimestamp}}",
+							"value": "{{currentDate}}",
 							"type": "text"
 						},
 						{
