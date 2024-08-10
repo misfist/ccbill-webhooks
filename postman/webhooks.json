@@ -95,12 +95,12 @@
 						},
 						{
 							"key": "renewalDate",
-							"value": "2024-08-14",
+							"value": "{{currentDate}}",
 							"type": "text"
 						},
 						{
 							"key": "nextRenewalDate",
-							"value": "2024-09-14",
+							"value": "{{nextRenewalDate}}",
 							"type": "text"
 						},
 						{
@@ -171,12 +171,12 @@
 						},
 						{
 							"key": "nextRetryDate",
-							"value": "2024-06-16",
+							"value": "{{nextRenewalDate}}",
 							"type": "text"
 						},
 						{
 							"key": "renewalDate",
-							"value": "2024-05-17",
+							"value": "{{currentDate}}",
 							"type": "text"
 						},
 						{
@@ -596,7 +596,7 @@
 						},
 						{
 							"key": "renewalDate",
-							"value": "2024-05-17",
+							"value": "{{currentDate}}",
 							"type": "text"
 						}
 					]
@@ -895,7 +895,7 @@
 						},
 						{
 							"key": "renewalDate",
-							"value": "2024-05-17",
+							"value": "{{currentDate}}",
 							"type": "text"
 						}
 					]
@@ -910,18 +910,30 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ebb63111-3f71-418c-bd00-c213d1af7e82",
+				"id": "e9e822e7-3bbb-47b7-8cbd-4737d7c87ad5",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
-					""
+					"const currentDate = new Date();",
+					"pm.collectionVariables.set(",
+					"    \"currentDate\", ",
+					"    currentDate.toISOString().split('T')[0]",
+					");",
+					"",
+					"const renewalDate = new Date();",
+					"const nextMonth = new Date(renewalDate.setMonth(renewalDate.getMonth() + 1));",
+					"",
+					"pm.collectionVariables.set(",
+					"    \"nextRenewalDate\", ",
+					"    nextMonth.toISOString().split('T')[0]",
+					");"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "aefaecf2-9b9a-4ba1-84bf-ea52d1e0f699",
+				"id": "e330be7f-afe0-4b83-a4d4-1b92487074cf",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -964,6 +976,19 @@
 		{
 			"key": "eventType",
 			"value": "eventType"
+		},
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "currentDate",
+			"value": ""
+		},
+		{
+			"key": "nextRenewalDate",
+			"value": ""
 		}
 	]
 }
