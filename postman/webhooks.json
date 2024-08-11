@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{$timestamp}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
