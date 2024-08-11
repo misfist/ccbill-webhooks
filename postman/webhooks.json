@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{$timestamp}}",
+							"value": "{{unixTimestamp}}",
 							"type": "text"
 						},
 						{
@@ -893,7 +893,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "52568409-c8af-4c6f-81ad-bd57c3e67f9b",
+				"id": "1148d811-7500-49a2-a070-5199c5ea2db8",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -918,14 +918,19 @@
 					"    \"formattedDate\", ",
 					"    `${formattedDate.getFullYear()}-${month}-${day} ${formattedDate.getHours()}:${formattedDate.getMinutes()}:${formattedDate.getSeconds()}`",
 					");",
-					""
+					"",
+					"const unixTimestamp = Math.round(+new Date()/1000);",
+					"pm.collectionVariables.set(",
+					"    \"unixTimestamp\", ",
+					"    unixTimestamp",
+					");"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "c14ae7ef-3b81-40d9-8ee7-ef02b0562521",
+				"id": "68e52a04-f069-4ae4-adbb-d2d63787de02",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -980,6 +985,10 @@
 			"key": "testing_webhook_url",
 			"value": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook",
 			"type": "string"
+		},
+		{
+			"key": "unixTimestamp",
+			"value": ""
 		}
 	]
 }
