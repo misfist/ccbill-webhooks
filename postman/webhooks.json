@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "262d54fc-3d82-4f71-9166-b2ab21ef0591",
+				"id": "c33369ba-a1a2-4a4d-bcee-132a09718dd6",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -931,7 +931,7 @@
 					"const formattedDate = new Date();",
 					"pm.collectionVariables.set(",
 					"    \"formattedDate\", ",
-					"    formattedDate.toISOString().split('.')[0]",
+					"    `${formattedDate.getFullYear()}-${formattedDate.getMonth() + 1}-${formattedDate.getDate()} ${formattedDate.getHours()}:${formattedDate.getMinutes()}:${formattedDate.getSeconds()}`",
 					");"
 				]
 			}
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9167d9c6-b791-40ff-9148-6473a1576014",
+				"id": "f5bb13aa-23be-42bd-9b8f-e37bb96c500f",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
