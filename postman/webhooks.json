@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{unixTimestamp}}",
+							"value": "{{currentDate}}",
 							"type": "text"
 						},
 						{
