@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1a0e1cda-942d-4f23-ab39-93903e279233",
+				"id": "7e94f001-7599-4bc6-9882-e8ce6d4e798d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -930,7 +930,7 @@
 					"",
 					"const formattedDate = new Date();",
 					"pm.collectionVariables.set(",
-					"    \"currentDate\", ",
+					"    \"formattedDate\", ",
 					"    formattedDate.toISOString().split('.')[0]",
 					");"
 				]
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d0d9a6c3-6160-4983-9ed8-b0cd6bcf4cdc",
+				"id": "ab5cd823-29d5-4c61-a6d8-a7708b038b67",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
