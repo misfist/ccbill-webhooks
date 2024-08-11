@@ -25,12 +25,12 @@
 						},
 						{
 							"key": "transactionId",
-							"value": "{{$timestamp}}",
+							"value": "{{$guid}}",
 							"type": "text"
 						},
 						{
 							"key": "timestamp",
-							"value": "{{formattedDate}}",
+							"value": "{{$timestamp}}",
 							"type": "text"
 						},
 						{
