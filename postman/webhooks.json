@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "56aa51f6-ecf1-41c8-aac4-c79d53b16532",
+				"id": "3942eb83-c7a0-4b23-a8f1-26ca2f4d3b2a",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e1852d2a-225e-46c0-93c5-b09421c1be46",
+				"id": "a530f9fb-f263-488e-acd0-65e05458627f",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -992,7 +992,7 @@
 		},
 		{
 			"key": "testing_webhook_url",
-			"value": "https://www.redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook",
+			"value": "https://redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook",
 			"type": "string"
 		}
 	]
