@@ -111,9 +111,9 @@
 					]
 				},
 				"url": {
-					"raw": "{{webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}",
+					"raw": "{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}",
 					"host": [
-						"{{webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}"
+						"{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}"
 					],
 					"query": [
 						{
@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c33369ba-a1a2-4a4d-bcee-132a09718dd6",
+				"id": "6cca09c3-d99c-4fbd-81ed-3122137391cb",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f5bb13aa-23be-42bd-9b8f-e37bb96c500f",
+				"id": "4edd0986-559a-42c1-84ee-02d1d6916e20",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -975,11 +975,6 @@
 			"type": "string"
 		},
 		{
-			"key": "creationDate",
-			"value": "",
-			"type": "string"
-		},
-		{
 			"key": "eventType",
 			"value": "eventType"
 		},
@@ -994,6 +989,11 @@
 		{
 			"key": "formattedDate",
 			"value": ""
+		},
+		{
+			"key": "testing_webhook_url",
+			"value": "https://www.redkeyclub.test/wp-admin/admin-ajax.php?action=ccbill-webhook",
+			"type": "string"
 		}
 	]
 }
