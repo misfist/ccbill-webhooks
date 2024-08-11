@@ -990,6 +990,10 @@
 		{
 			"key": "nextRenewalDate",
 			"value": ""
+		},
+		{
+			"key": "formattedDate",
+			"value": ""
 		}
 	]
 }
