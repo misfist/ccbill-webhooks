@@ -156,7 +156,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -220,7 +220,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{$isoTimestamp}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -269,7 +269,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{$isoTimestamp}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -313,7 +313,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -417,7 +417,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -521,7 +521,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -630,7 +630,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "{{creationDate}}",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7e94f001-7599-4bc6-9882-e8ce6d4e798d",
+				"id": "262d54fc-3d82-4f71-9166-b2ab21ef0591",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ab5cd823-29d5-4c61-a6d8-a7708b038b67",
+				"id": "9167d9c6-b791-40ff-9148-6473a1576014",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
