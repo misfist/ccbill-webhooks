@@ -110,24 +110,7 @@
 						}
 					]
 				},
-				"url": {
-					"raw": "{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}",
-					"host": [
-						"{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}"
-					],
-					"query": [
-						{
-							"key": "validate",
-							"value": "{{validate}}",
-							"disabled": true
-						},
-						{
-							"key": "creationDate",
-							"value": "{{formattedDate}}",
-							"disabled": true
-						}
-					]
-				},
+				"url": "{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -601,7 +584,7 @@
 						}
 					]
 				},
-				"url": "{{webhook_url}}&eventType=UpgradeSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
+				"url": "{{webhook_url}}&eventType=UpgradeSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
@@ -900,7 +883,7 @@
 						}
 					]
 				},
-				"url": "{{webhook_url}}&eventType=NewSaleSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{creationDate}}",
+				"url": "{{webhook_url}}&eventType=NewSaleSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
