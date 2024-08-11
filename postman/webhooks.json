@@ -25,7 +25,7 @@
 						},
 						{
 							"key": "transactionId",
-							"value": "{{$guid}}",
+							"value": "{{$timestamp}}",
 							"type": "text"
 						},
 						{
