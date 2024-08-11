@@ -110,7 +110,7 @@
 						}
 					]
 				},
-				"url": "{{webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
+				"url": "{{testing_webhook_url}}&eventType=RenewalSuccess&clientAccnum={{clientAccnum}}&clientSubacc={{clientSubacc}}&eventGroup={{eventGroup}}&validate={{validate}}&creationDate={{$isoTimestamp}}",
 				"description": "**Version 5**  \n**Supported Formats**: URL Encoded, JSON\n\nThe changes to RenewalSuccess (Rebill) in version 5 released on June 1,  \n2017 contain all of the previous parameters for version 4, with the  \naddition of the **paymentAccount** variable."
 			},
 			"response": []
