@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "timestamp",
-							"value": "",
+							"value": "{{formattedDate}}",
 							"type": "text"
 						},
 						{
@@ -910,7 +910,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2b02380c-c3e7-4e76-8d56-a55fbe05d9e1",
+				"id": "1a0e1cda-942d-4f23-ab39-93903e279233",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -928,10 +928,10 @@
 					"    nextMonth.toISOString().split('T')[0]",
 					");",
 					"",
-					"const timestamp = new Date();",
+					"const formattedDate = new Date();",
 					"pm.collectionVariables.set(",
 					"    \"currentDate\", ",
-					"    timestamp.toISOString().split('.')[0]",
+					"    formattedDate.toISOString().split('.')[0]",
 					");"
 				]
 			}
@@ -939,7 +939,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ed7e426a-3bdd-44f2-8a7e-bb3905674bb4",
+				"id": "d0d9a6c3-6160-4983-9ed8-b0cd6bcf4cdc",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
