@@ -893,7 +893,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3942eb83-c7a0-4b23-a8f1-26ca2f4d3b2a",
+				"id": "52568409-c8af-4c6f-81ad-bd57c3e67f9b",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -912,17 +912,20 @@
 					");",
 					"",
 					"const formattedDate = new Date();",
+					"const day = String(formattedDate.getDate()).padStart(2, '0');",
+					"const month = String(formattedDate.getMonth() + 1).padStart(2, '0');",
 					"pm.collectionVariables.set(",
 					"    \"formattedDate\", ",
-					"    `${formattedDate.getFullYear()}-${formattedDate.getMonth() + 1}-${formattedDate.getDate()} ${formattedDate.getHours()}:${formattedDate.getMinutes()}:${formattedDate.getSeconds()}`",
-					");"
+					"    `${formattedDate.getFullYear()}-${month}-${day} ${formattedDate.getHours()}:${formattedDate.getMinutes()}:${formattedDate.getSeconds()}`",
+					");",
+					""
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "a530f9fb-f263-488e-acd0-65e05458627f",
+				"id": "c14ae7ef-3b81-40d9-8ee7-ef02b0562521",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
